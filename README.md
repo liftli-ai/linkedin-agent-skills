@@ -8,7 +8,9 @@ phones home.
 
 Built by [Liftli](https://liftli.ai) — the content engine that runs inside the
 AI you already use. Every skill here also exists as a free web tool at
-[liftli.ai/tools](https://liftli.ai/tools/).
+[liftli.ai/tools](https://liftli.ai/tools/), and the full skill directory with
+per-skill install commands lives at [liftli.ai/skills](https://liftli.ai/skills/)
+(machine-readable manifest: [liftli.ai/.well-known/skills](https://liftli.ai/.well-known/skills)).
 
 ## Install
 
