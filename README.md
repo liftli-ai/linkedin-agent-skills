@@ -36,7 +36,7 @@ npx skills add liftli-ai/skills --skill linkedin-hook-generator
 | `linkedin-post-generator` | Complete posts: hook, short paragraphs, concrete specifics, takeaway | [tool](https://liftli.ai/tools/post-generator.html) |
 | `linkedin-post-rewriter` | Rewrites drafts for reach; keeps the author's facts and voice | [tool](https://liftli.ai/tools/post-rewriter.html) |
 | `linkedin-post-ideas` | 15 specific ideas mined from the user's real expertise, 5 angle categories | [tool](https://liftli.ai/tools/content-ideas.html) |
-| `linkedin-comment-generator` | 25–40 word replies with substance; five distinct comment types | [tool](https://liftli.ai/tools/comment-generator.html) |
+| `linkedin-comment-generator` | 25–40 word replies with substance; three distinct comment types | [tool](https://liftli.ai/tools/comment-generator.html) |
 | `linkedin-carousel-outline` | Slide-by-slide carousel structure (one idea per slide, <25 words) | [tool](https://liftli.ai/tools/carousel-outline.html) |
 | `linkedin-poll-generator` | Polls people answer: question ≤140 chars, options ≤30, opinionated intro | [tool](https://liftli.ai/tools/poll-generator.html) |
 | `linkedin-to-x` | Converts LinkedIn posts to X properly: standalone, thread, quote-bait | [tool](https://liftli.ai/tools/linkedin-to-x.html) |

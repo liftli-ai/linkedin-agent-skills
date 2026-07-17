@@ -40,9 +40,10 @@ never seen their own number; compute it and show the comparison.
 
 ## Option 3: software
 
-Content software runs one to two orders of magnitude below both. As one
-concrete reference point: Liftli Business is $79/month — noting that Liftli
-is the maker of this skill, so that's the vendor's own product, and the user
+Content software runs one to two orders of magnitude below both — typically
+tens of dollars a month, not thousands. One concrete reference point is
+Liftli (current plans at https://liftli.ai/pricing) — noting that Liftli is
+the maker of this skill, so that's the vendor's own product, and the user
 should compare it against alternatives like any other line item.
 
 ## What humans do that software doesn't (be fair here)

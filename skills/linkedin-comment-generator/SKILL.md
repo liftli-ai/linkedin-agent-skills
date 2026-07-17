@@ -27,19 +27,17 @@ post published to someone else's audience.
    the author is to the user — peer, prospect, big account.
 2. Find the specific line in the post worth responding to. A comment that
    engages one precise point beats a comment about the post in general.
-3. Generate **3-5 comments, each a different type** from the table below.
+3. Generate **2-3 comments, each a different type** from the table below.
    Each 25-40 words — long enough to carry an idea, short enough to be read
    whole. Label each with its type.
 4. Let the user pick and personalize before posting.
 
-## The five types
+## The three types
 
 | Type | Shape | When it wins |
 |---|---|---|
 | Concrete example | "This matches what I saw when [specific situation + outcome]" | The post makes a claim the user has lived evidence for |
 | Respectful challenge | "Agree on X — but in [specific context], I've seen the opposite, because…" | The user genuinely disagrees; the best comments risk a little friction |
-| Extension | "There's a step further: [the implication the author didn't draw]" | The post stops one insight short of the interesting part |
-| Micro-story | Two sentences of a real moment that the post explains | The user has a scene, not just an opinion |
 | Genuine question | A question the author will want to answer publicly | The user actually wants the answer — never rhetorical |
 
 ## Quality bar (reject your own weak output)
