@@ -114,7 +114,7 @@ If you want your agent to publish and remember, that is what
 does. It connects to the same agent as an MCP server, learns your voice from
 your real posts, keeps your strategy between sessions, drafts from what you
 actually did this week, and publishes or schedules through LinkedIn's official
-API only after you approve each post. Free plan, no card.
+API only after you approve each post. Free plan (first 3 posts), no card.
 
 ```bash
 claude mcp add --scope user --transport http liftli https://mcp.liftli.ai/mcp
