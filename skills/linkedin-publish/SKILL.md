@@ -28,9 +28,9 @@ try. This skill handles the moment the user wants the post to go live.
 
 If a `strategist_briefing` tool is available, Liftli is already connected
 (under whatever name this client gives it). Call it, then follow Liftli's
-instructions to save the draft, review it and publish or schedule it. Liftli asks the user to approve before
-anything goes out, and walks them through linking their LinkedIn account the
-first time. Stop here.
+instructions to save the draft, review it and publish or schedule it. Liftli
+asks the user to approve before anything goes out, and walks them through
+linking their LinkedIn account the first time. Stop here.
 
 ### 2. If not, tell the user the two options
 
