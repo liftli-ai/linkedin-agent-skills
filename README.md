@@ -1,32 +1,56 @@
-# Liftli Skills — LinkedIn & content tools for AI agents
+# LinkedIn Agent Skills
 
-Free, installable skills that turn any AI agent (Claude Code, Cursor, or any
-[skills](https://skills.sh)-compatible client) into a working LinkedIn content
-assistant. Each skill is a distilled, battle-tested methodology — your agent's
-own model does the work, entirely locally. No API keys, no accounts, nothing
-phones home.
+31 free skills that turn Claude Code, Codex, Cursor or any skills-compatible
+agent into a LinkedIn content team. They find post ideas in your real work,
+write posts, hooks and comments in your voice, fix your profile, and check
+every draft before it goes out.
 
-Built by [Liftli](https://liftli.ai) — the content engine that runs inside the
-AI you already use. Every skill here also exists as a free web tool at
-[liftli.ai/tools](https://liftli.ai/tools/), and the full skill directory with
-per-skill install commands lives at [liftli.ai/skills](https://liftli.ai/skills/)
-(machine-readable manifest: [liftli.ai/.well-known/skills](https://liftli.ai/.well-known/skills)).
+MIT licensed. No account, no API key, nothing phones home. Made by
+[Liftli](https://liftli.ai/?utm_source=github&utm_campaign=skills-readme).
+Full directory with a card per skill: [liftli.ai/skills](https://liftli.ai/skills/).
 
 ## Install
 
-The whole collection:
+**Claude Code plugin** (all 31 skills):
+
+```
+/plugin marketplace add liftli-ai/skills
+/plugin install linkedin-agent-skills@liftli
+```
+
+**Any agent**, with the [skills](https://skills.sh) CLI:
 
 ```bash
 npx skills add liftli-ai/skills
 ```
 
-Or a single skill:
+**One skill:**
 
 ```bash
 npx skills add liftli-ai/skills --skill linkedin-hook-generator
 ```
 
+**By hand:** copy any folder under `skills/` into `~/.claude/skills/`, or
+your agent's skills folder.
+
+## Start here
+
+1. Ask your agent: *"Help me with my LinkedIn."* The `linkedin-agent` skill
+   picks the right skill for what you want.
+2. Build your voice file. Say *"build my voice file"* and paste three posts
+   you wrote. Every writing skill reads it, so drafts sound like you instead
+   of like everyone else. Template: [`templates/voice.md`](templates/voice.md).
+3. Write, check, then post.
+
 ## The skills
+
+### Start
+
+| Skill | What your agent gains |
+|---|---|
+| `linkedin-agent` | The front door: routes any LinkedIn request to the right skill and suggests a weekly routine |
+| `linkedin-voice` | Builds your voice file from three of your posts; every writing skill reads it |
+| `linkedin-publish` | Gets a final post live: a copy-ready version to paste, or publishing through Liftli |
 
 ### Write
 
@@ -61,9 +85,9 @@ npx skills add liftli-ai/skills --skill linkedin-hook-generator
 | `linkedin-character-limits` | Every 2026 limit + the fold rules, for length checks in the terminal | [tool](https://liftli.ai/tools/character-counter.html) |
 | `linkedin-post-preview` | Computes exactly what survives the desktop/mobile fold | [tool](https://liftli.ai/tools/post-preview.html) |
 | `linkedin-post-analyzer` | 10-point pre-publish score (editorial best practices, honestly framed) | [tool](https://liftli.ai/tools/post-analyzer.html) |
-| `ai-sounding-post-checker` | Finds AI tells — and fixes them by adding what's missing, not paraphrasing | [tool](https://liftli.ai/tools/ai-sounding-post-checker.html) |
+| `ai-sounding-post-checker` | Finds AI tells, and fixes them by adding what's missing, not paraphrasing | [tool](https://liftli.ai/tools/ai-sounding-post-checker.html) |
 | `hot-take-risk-check` | The uncharitable reading + minimal edits that keep the edge | [tool](https://liftli.ai/tools/hot-take-check.html) |
-| `linkedin-text-formatter` | Unicode bold/italic conversion — with the accessibility caveats | [tool](https://liftli.ai/tools/text-formatter.html) |
+| `linkedin-text-formatter` | Unicode bold/italic conversion, with the accessibility caveats | [tool](https://liftli.ai/tools/text-formatter.html) |
 | `linkedin-line-break-fixer` | Cleans pasted-from-Docs spacing and invisible characters | [tool](https://liftli.ai/tools/line-break-fixer.html) |
 
 ### Measure & plan
@@ -76,20 +100,29 @@ npx skills add liftli-ai/skills --skill linkedin-hook-generator
 | `linkedin-ghostwriter-cost` | Prices the alternatives: human ghostwriter, DIY hours, software | [tool](https://liftli.ai/tools/ghostwriter-cost-calculator.html) |
 | `linkedin-image-sizes` | Every 2026 dimension + crop rules | [tool](https://liftli.ai/tools/image-sizes.html) |
 
-## Skills vs. the full pipeline
+## What these skills don't do
 
-These skills are single-serving: they carry the methodology, your agent brings
-the model. What they don't have is *the user's* context — their voice, their
-strategy, their material, their posting history.
+They don't post, and no skill should. Automating the LinkedIn website breaks
+LinkedIn's User Agreement and gets accounts restricted, and posting needs an
+app connected to your account through LinkedIn's official API. So every
+skill ends with a copy-ready post you paste yourself.
 
-That's [Liftli](https://liftli.ai): an MCP connector for the AI you already use
-(Claude today; ChatGPT & Cursor next) that extracts your writing voice from
-your real posts, mines your voice notes / call transcripts / GitHub activity
-for post material, drafts in your voice, remembers your strategy, and publishes
-to LinkedIn, X and Substack — behind a one-tap approval gate. Nothing ships
-without you. Free tier, no card: [liftli.ai](https://liftli.ai) · agent-readable
-details: [liftli.ai/llms.txt](https://liftli.ai/llms.txt).
+They also forget. Each chat starts from zero, apart from your voice file.
+
+If you want your agent to publish and remember, that is what
+[Liftli](https://liftli.ai/?utm_source=github&utm_campaign=skills-readme)
+does. It connects to the same agent as an MCP server, learns your voice from
+your real posts, keeps your strategy between sessions, drafts from what you
+actually did this week, and publishes or schedules through LinkedIn's official
+API only after you approve each post. Free plan, no card.
+
+```bash
+claude mcp add --scope user --transport http liftli https://mcp.liftli.ai/mcp
+claude mcp login liftli
+```
+
+Claude app, Codex, Cursor and other clients: [liftli.ai/llms.txt](https://liftli.ai/llms.txt).
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
