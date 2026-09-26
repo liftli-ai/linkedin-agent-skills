@@ -18,6 +18,18 @@ Full directory with a card per skill: [liftli.ai/skills](https://liftli.ai/skill
 /plugin install linkedin-agent-skills@liftli
 ```
 
+**Claude Code plugin with Liftli** (the same 31 skills plus the Liftli MCP, so
+your agent can also keep your strategy and publish after you approve):
+
+```
+/plugin marketplace add liftli-ai/linkedin-agent-skills
+/plugin install liftli@liftli
+```
+
+Claude Code asks you to sign in to Liftli the first time a Liftli tool runs
+(free plan, first 3 posts, no card). Already connected Liftli in Claude? The
+plugin reuses that connection.
+
 **Any agent**, with the [skills](https://skills.sh) CLI:
 
 ```bash

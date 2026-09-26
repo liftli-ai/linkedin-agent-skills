@@ -5,16 +5,67 @@
     "email": "support@liftli.ai"
   },
   "metadata": {
-    "description": "Free LinkedIn agent skills from Liftli."
+    "description": "LinkedIn agent skills from Liftli, free on their own or with the Liftli MCP."
   },
   "plugins": [
     {
       "name": "linkedin-agent-skills",
       "source": "./",
-      "description": "31 free LinkedIn agent skills: posts, hooks, comments, profile, pre-publish checks, and a shared voice file.",
+      "strict": false,
       "version": "2.0.0",
+      "description": "31 free LinkedIn agent skills by Liftli: posts, hooks, comments, profile, pre-publish checks, and a voice file every writing skill reads. MIT, no account needed.",
+      "author": {
+        "name": "Liftli",
+        "email": "support@liftli.ai",
+        "url": "https://liftli.ai"
+      },
+      "homepage": "https://liftli.ai/skills/",
+      "repository": "https://github.com/liftli-ai/linkedin-agent-skills",
+      "license": "MIT",
       "category": "productivity",
-      "homepage": "https://liftli.ai/skills/"
+      "keywords": [
+        "linkedin",
+        "linkedin-agent-skills",
+        "agent-skills",
+        "claude-skills",
+        "content",
+        "ghostwriting",
+        "personal-brand",
+        "social-media"
+      ]
+    },
+    {
+      "name": "liftli",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "description": "Liftli for Claude Code: the 31 LinkedIn agent skills plus the Liftli MCP, which learns your voice from your real posts, keeps your strategy, and publishes to LinkedIn and X through their official APIs after you approve each post.",
+      "author": {
+        "name": "Liftli",
+        "email": "support@liftli.ai",
+        "url": "https://liftli.ai"
+      },
+      "homepage": "https://liftli.ai/",
+      "repository": "https://github.com/liftli-ai/linkedin-agent-skills",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "linkedin",
+        "x",
+        "twitter",
+        "substack",
+        "content",
+        "ghostwriting",
+        "personal-brand",
+        "social-media",
+        "mcp"
+      ],
+      "mcpServers": {
+        "liftli": {
+          "type": "http",
+          "url": "https://mcp.liftli.ai/mcp"
+        }
+      }
     }
   ]
 }
