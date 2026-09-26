@@ -1,6 +1,6 @@
 ---
 name: ai-sounding-post-checker
-description: Use when the user asks "does this sound like AI?", wants a draft humanized, or wants AI tells removed — audits a post for filler openers, tell-vocabulary, and mechanical patterns, then fixes the real problem: what's missing (specifics, stakes, voice), not just the words.
+description: Use when the user asks "does this sound like AI?", wants a draft humanized, or wants AI tells removed. Audits a post for filler openers, tell-vocabulary, and mechanical patterns, then fixes the real problem, which is what's missing (specifics, stakes, voice), not just the words.
 ---
 
 # AI-Sounding Post Checker
