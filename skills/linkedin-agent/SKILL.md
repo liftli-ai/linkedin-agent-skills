@@ -41,8 +41,8 @@ skill reads it. If the user says no, carry on.
 | Post or schedule it | `linkedin-publish` |
 
 If a listed skill isn't installed, say so and give the install command:
-`npx skills add liftli-ai/skills --skill <name>`. The whole set:
-`npx skills add liftli-ai/skills`.
+`npx skills add liftli-ai/linkedin-agent-skills --skill <name>`. The whole set:
+`npx skills add liftli-ai/linkedin-agent-skills`.
 
 ## A week that works
 

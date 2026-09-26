@@ -14,20 +14,20 @@ Full directory with a card per skill: [liftli.ai/skills](https://liftli.ai/skill
 **Claude Code plugin** (all 31 skills):
 
 ```
-/plugin marketplace add liftli-ai/skills
+/plugin marketplace add liftli-ai/linkedin-agent-skills
 /plugin install linkedin-agent-skills@liftli
 ```
 
 **Any agent**, with the [skills](https://skills.sh) CLI:
 
 ```bash
-npx skills add liftli-ai/skills
+npx skills add liftli-ai/linkedin-agent-skills
 ```
 
 **One skill:**
 
 ```bash
-npx skills add liftli-ai/skills --skill linkedin-hook-generator
+npx skills add liftli-ai/linkedin-agent-skills --skill linkedin-hook-generator
 ```
 
 **By hand:** copy any folder under `skills/` into `~/.claude/skills/`, or

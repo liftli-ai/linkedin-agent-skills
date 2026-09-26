@@ -8,7 +8,7 @@
     "url": "https://liftli.ai"
   },
   "homepage": "https://liftli.ai/skills/",
-  "repository": "https://github.com/liftli-ai/skills",
+  "repository": "https://github.com/liftli-ai/linkedin-agent-skills",
   "license": "MIT",
   "keywords": ["linkedin", "linkedin-agent-skills", "agent-skills", "claude-skills", "content", "ghostwriting", "personal-brand", "social-media"]
 }

@@ -21,7 +21,7 @@ is allowed to use, what is off limits, and how they sound. Use only stories and
 numbers from the voice file, the chat, or material this skill gathers. If
 there is no voice file, write anyway, and at the end suggest building one once
 with the `linkedin-voice` skill (install:
-`npx skills add liftli-ai/skills --skill linkedin-voice`).
+`npx skills add liftli-ai/linkedin-agent-skills --skill linkedin-voice`).
 
 ## When to use
 

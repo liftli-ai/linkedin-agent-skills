@@ -67,7 +67,7 @@ user to keep it and paste it in at the start of future chats.
 ```
 
 The full commented template is `templates/voice.md` in the
-[liftli-ai/skills](https://github.com/liftli-ai/skills) repository.
+[liftli-ai/linkedin-agent-skills](https://github.com/liftli-ai/linkedin-agent-skills) repository.
 
 ## Quality bar
 
