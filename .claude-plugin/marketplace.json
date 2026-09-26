@@ -1,0 +1,20 @@
+{
+  "name": "liftli",
+  "owner": {
+    "name": "Liftli",
+    "email": "support@liftli.ai"
+  },
+  "metadata": {
+    "description": "Free LinkedIn agent skills from Liftli."
+  },
+  "plugins": [
+    {
+      "name": "linkedin-agent-skills",
+      "source": "./",
+      "description": "31 free LinkedIn agent skills: posts, hooks, comments, profile, pre-publish checks, and a shared voice file.",
+      "version": "2.0.0",
+      "category": "productivity",
+      "homepage": "https://liftli.ai/skills/"
+    }
+  ]
+}
