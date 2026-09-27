@@ -65,7 +65,11 @@
           "type": "http",
           "url": "https://mcp.liftli.ai/mcp"
         }
-      }
+      },
+      "skills": [
+        "./skills",
+        "./plugin-skills"
+      ]
     }
   ]
 }

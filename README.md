@@ -30,6 +30,17 @@ Claude Code asks you to sign in to Liftli the first time a Liftli tool runs
 (free plan, first 3 posts, no card). Already connected Liftli in Claude? The
 plugin reuses that connection.
 
+**Cursor, Grok and Gemini CLI** (the `liftli` plugin, same skills plus the
+Liftli MCP):
+
+- Cursor: clone this repository, link it into `~/.cursor/plugins/local/liftli`,
+  then reload Cursor.
+- Grok Build: add this repository as a plugin marketplace source
+  (`.grok-plugin/marketplace.json`).
+- Gemini CLI: `gemini extensions install https://github.com/liftli-ai/linkedin-agent-skills`
+
+Each one asks you to sign in to Liftli the first time a Liftli tool runs.
+
 **Any agent**, with the [skills](https://skills.sh) CLI:
 
 ```bash

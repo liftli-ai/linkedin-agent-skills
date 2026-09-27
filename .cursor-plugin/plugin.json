@@ -1,0 +1,35 @@
+{
+  "name": "liftli",
+  "version": "1.0.0",
+  "description": "Liftli for your AI: 31 LinkedIn agent skills plus the Liftli MCP, which learns your voice from your real posts, keeps your strategy, and publishes to LinkedIn and X through their official APIs after you approve each post.",
+  "author": {
+    "name": "Liftli",
+    "email": "support@liftli.ai"
+  },
+  "homepage": "https://liftli.ai/",
+  "repository": "https://github.com/liftli-ai/linkedin-agent-skills",
+  "license": "MIT",
+  "logo": "assets/logo.svg",
+  "keywords": [
+    "liftli",
+    "linkedin",
+    "x",
+    "twitter",
+    "substack",
+    "content",
+    "ghostwriting",
+    "personal-brand",
+    "social-media",
+    "mcp",
+    "agent-skills"
+  ],
+  "skills": [
+    "./skills",
+    "./plugin-skills"
+  ],
+  "mcpServers": {
+    "liftli": {
+      "url": "https://mcp.liftli.ai/mcp"
+    }
+  }
+}
