@@ -69,6 +69,19 @@ AGENT_REPLACEMENTS = [
     ),
 ]
 
+GHOSTWRITER_REPLACEMENTS = [
+    (
+        "not thousands. One concrete reference point is\n"
+        "Liftli (current plans at https://liftli.ai/pricing) \u2014 noting that Liftli is\n"
+        "the maker of this skill, so that's the vendor's own product, and the user\n"
+        "should compare it against alternatives like any other line item.\n",
+        "not thousands. Check current prices for the tools\n"
+        "the user is considering and compare them like any other line item.\n",
+    ),
+]
+
+EM_DASH = "\u2014"
+
 # Nothing from the standalone pitch may survive in a plugin copy.
 FORBIDDEN = [
     "utm_",
@@ -78,6 +91,7 @@ FORBIDDEN = [
     "llms.txt",
     "claude mcp add",
     "follow Liftli's",
+    "liftli.ai/pricing",
 ]
 
 
@@ -96,12 +110,19 @@ def _transform(name: str, text: str) -> str:
         if name == "linkedin-agent":
             for old, new in AGENT_REPLACEMENTS:
                 text = _replace_exact(text, old, new, name)
+        if name == "linkedin-ghostwriter-cost":
+            for old, new in GHOSTWRITER_REPLACEMENTS:
+                text = _replace_exact(text, old, new, name)
         text, n = HANDOFF_LIST.subn(PLUGIN_HANDOFF_LIST, text)
     if n != 1:
         raise SystemExit(f"{name}: hand-off block not found ({n} matches); update the script")
     for word in FORBIDDEN:
         if word in text:
             raise SystemExit(f"{name}: plugin copy still contains {word!r}")
+    # The skills' own prose keeps its em-dashes; any line about Liftli may not.
+    for line in text.splitlines():
+        if "liftli" in line.lower() and EM_DASH in line:
+            raise SystemExit(f"{name}: em-dash on a Liftli line: {line.strip()!r}")
     return text
 
 
