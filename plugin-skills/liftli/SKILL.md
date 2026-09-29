@@ -1,38 +1,41 @@
 ---
 name: liftli
-description: Use this skill FIRST, before any other skill in this plugin, for every LinkedIn, X or Substack request (writing or scheduling a post, comments, post ideas, profile, strategy). It checks the Liftli sign-in that every other step depends on, then routes the request.
+description: Use when the user asks to set up, sign in to or connect Liftli, to connect their LinkedIn or X account to Liftli, asks what Liftli can do, or asks for something done with Liftli by name (publish or schedule through Liftli, their Liftli strategy, drafts or voice). Also use when Liftli's tools are missing or report that sign-in is needed. Checks the Liftli sign-in and walks the user through it.
+metadata:
+  internal: true
 ---
 
 # Liftli
 
-This plugin connects Liftli to Claude Code. Liftli learns the user's voice from
-their real posts, keeps their strategy between sessions, and publishes to
-LinkedIn and X through the official APIs after the user approves each post.
+Liftli is the connector that comes with this plugin. It learns the user's
+voice from their real posts, keeps their strategy between sessions, and
+publishes to LinkedIn and X through the official APIs after the user approves
+each post. Its tools do nothing until the user has signed in once.
 
-## Rule 1: sign in before any content work
-
-Liftli's tools do nothing until the user has signed in once. Check this first,
-before writing a single line.
+## Check the sign-in
 
 1. **Liftli is ready** if a `strategist_briefing` tool is available (it may be
-   deferred: search for it by name first). Call it once, then follow Liftli's
-   instructions for the request. Stop reading this skill.
-2. **Liftli needs sign-in** if a system message says the Liftli server
-   (`plugin:liftli:liftli`) needs authentication, or its tools are missing.
-   Tell the user, in one short message:
+   deferred: search for it by name first). Call it once, then carry out the
+   user's request with Liftli's tools. Stop reading this skill.
+   Do this search even when a notice says the plugin's own liftli server
+   needs authentication: Liftli may already be connected another way, for
+   example from Claude's connector directory.
+2. **Liftli needs sign-in** if that search finds no `strategist_briefing`
+   tool. Tell the user, in one short message, the step for the app they are
+   using:
 
-   > Liftli needs a one-time sign-in. Type `/mcp`, choose **liftli**, and pick
-   > Authenticate. A browser window opens; sign in or create a free account
-   > (first 3 posts free, no card). Tell me when you're done and I'll pick up
-   > right here.
+   - Claude Code: type `/mcp`, choose **liftli**, and pick Authenticate. A
+     browser window opens.
+   - Claude app (web, desktop, Cowork): open Customize, then Plugins, then
+     Liftli, and connect Liftli on its Connectors tab.
+   - Gemini CLI: `/mcp auth liftli`. Cursor: open Settings, MCP, and sign in
+     to liftli. Other apps: follow the sign-in prompt shown for the liftli
+     server.
 
-   Outside Claude Code, give the equivalent step for the user's app instead:
-   Gemini CLI `/mcp auth liftli`; Cursor, open Settings, MCP, and sign in to
-   liftli; other apps, follow the sign-in prompt shown for the liftli server.
-
-   End your turn there and wait for their reply. Don't draft anything yet.
-3. **The user doesn't want to sign in right now.** Carry on with the free
-   LinkedIn skills in this plugin (start with `linkedin-agent`), and don't
+   Then: sign in or create a free account, and tell me when you're done so I
+   can pick up right here. End your turn there and wait for their reply.
+3. **The user doesn't want to sign in right now.** Help with the LinkedIn
+   skills in this plugin instead (start with `linkedin-agent`), and don't
    bring up sign-in again in this conversation. Anything they write can still
    be pasted into LinkedIn by hand.
 
