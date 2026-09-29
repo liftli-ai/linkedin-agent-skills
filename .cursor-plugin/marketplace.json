@@ -1,0 +1,18 @@
+{
+  "name": "liftli",
+  "owner": {
+    "name": "Liftli",
+    "email": "support@liftli.ai"
+  },
+  "metadata": {
+    "description": "Liftli: LinkedIn agent skills plus the Liftli MCP."
+  },
+  "plugins": [
+    {
+      "name": "liftli",
+      "source": "./",
+      "description": "Liftli for your AI: 31 LinkedIn agent skills plus the Liftli MCP, which learns your voice from your real posts, keeps your strategy, and publishes to LinkedIn and X through their official APIs after you approve each post.",
+      "category": "productivity"
+    }
+  ]
+}

@@ -5,16 +5,62 @@
     "email": "support@liftli.ai"
   },
   "metadata": {
-    "description": "Free LinkedIn agent skills from Liftli."
+    "description": "LinkedIn agent skills from Liftli, free on their own or with the Liftli connector."
   },
   "plugins": [
     {
       "name": "linkedin-agent-skills",
       "source": "./",
-      "description": "31 free LinkedIn agent skills: posts, hooks, comments, profile, pre-publish checks, and a shared voice file.",
+      "strict": false,
       "version": "2.0.0",
+      "description": "31 free LinkedIn agent skills by Liftli: posts, hooks, comments, profile, pre-publish checks, and a voice file every writing skill reads. MIT, no account needed.",
+      "author": {
+        "name": "Liftli",
+        "email": "support@liftli.ai",
+        "url": "https://liftli.ai"
+      },
+      "homepage": "https://liftli.ai/skills/",
+      "repository": "https://github.com/liftli-ai/linkedin-agent-skills",
+      "license": "MIT",
       "category": "productivity",
-      "homepage": "https://liftli.ai/skills/"
+      "keywords": [
+        "linkedin",
+        "linkedin-agent-skills",
+        "agent-skills",
+        "claude-skills",
+        "content",
+        "ghostwriting",
+        "personal-brand",
+        "social-media"
+      ]
+    },
+    {
+      "name": "liftli",
+      "source": "./plugins/liftli",
+      "version": "1.1.0",
+      "description": "Liftli for Claude: 31 LinkedIn skills for posts, hooks, comments, profile and pre-publish checks, plus the Liftli connector, which learns your voice from your real posts, keeps your strategy between chats, and publishes to LinkedIn and X through their official APIs after you approve each post.",
+      "author": {
+        "name": "Liftli",
+        "email": "support@liftli.ai",
+        "url": "https://liftli.ai"
+      },
+      "homepage": "https://liftli.ai/",
+      "repository": "https://github.com/liftli-ai/linkedin-agent-skills",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "liftli",
+        "linkedin",
+        "x",
+        "twitter",
+        "substack",
+        "content",
+        "ghostwriting",
+        "personal-brand",
+        "social-media",
+        "mcp",
+        "agent-skills"
+      ]
     }
   ]
 }

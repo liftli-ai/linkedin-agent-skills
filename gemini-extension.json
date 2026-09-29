@@ -1,0 +1,11 @@
+{
+  "name": "liftli",
+  "version": "1.1.0",
+  "description": "Liftli for your AI: 31 LinkedIn agent skills plus the Liftli MCP, which learns your voice from your real posts, keeps your strategy, and publishes to LinkedIn and X through their official APIs after you approve each post.",
+  "mcpServers": {
+    "liftli": {
+      "httpUrl": "https://mcp.liftli.ai/mcp",
+      "description": "Official Liftli MCP server (hosted, streamable HTTP). Gemini CLI opens a browser to sign in to Liftli on first use; no API key needed."
+    }
+  }
+}

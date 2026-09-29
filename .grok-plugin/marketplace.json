@@ -1,0 +1,38 @@
+{
+  "name": "liftli",
+  "description": "Liftli: LinkedIn agent skills plus the Liftli MCP.",
+  "owner": {
+    "name": "Liftli",
+    "email": "support@liftli.ai"
+  },
+  "plugins": [
+    {
+      "name": "liftli",
+      "description": "Liftli for your AI: 31 LinkedIn agent skills plus the Liftli MCP, which learns your voice from your real posts, keeps your strategy, and publishes to LinkedIn and X through their official APIs after you approve each post.",
+      "category": "productivity",
+      "source": {
+        "type": "local",
+        "path": "./"
+      },
+      "homepage": "https://liftli.ai/",
+      "keywords": [
+        "liftli",
+        "linkedin",
+        "x",
+        "twitter",
+        "substack",
+        "content",
+        "ghostwriting",
+        "personal-brand",
+        "social-media",
+        "mcp",
+        "agent-skills"
+      ],
+      "domains": [
+        "liftli.ai",
+        "mcp.liftli.ai",
+        "app.liftli.ai"
+      ]
+    }
+  ]
+}
