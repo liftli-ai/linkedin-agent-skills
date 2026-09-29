@@ -18,17 +18,21 @@ Full directory with a card per skill: [liftli.ai/skills](https://liftli.ai/skill
 /plugin install linkedin-agent-skills@liftli
 ```
 
-**Claude Code plugin with Liftli** (the same 31 skills plus the Liftli MCP, so
-your agent can also keep your strategy and publish after you approve):
+**Claude Code plugin with Liftli** (the same 31 skills plus the Liftli
+connector, so your agent can also keep your strategy and publish after you
+approve):
 
 ```
 /plugin marketplace add liftli-ai/linkedin-agent-skills
 /plugin install liftli@liftli
 ```
 
-Claude Code asks you to sign in to Liftli the first time a Liftli tool runs
-(free plan, first 3 posts, no card). Already connected Liftli in Claude? The
-plugin reuses that connection.
+To sign in to Liftli once, type `/mcp`, choose **liftli** and pick
+Authenticate, or just ask "help me set up Liftli" (free plan, first 3 posts,
+no card). The plugin connects to `https://mcp.liftli.ai/directory/mcp`, the
+same address as Liftli's listing in Claude's connector directory, so if you
+added Liftli from that directory you get one Liftli, not two. This plugin
+lives in [`plugins/liftli`](plugins/liftli).
 
 **Cursor, Grok and Gemini CLI** (the `liftli` plugin, same skills plus the
 Liftli MCP):
@@ -145,6 +149,12 @@ claude mcp login liftli
 ```
 
 Claude app, Codex, Cursor and other clients: [liftli.ai/llms.txt](https://liftli.ai/llms.txt).
+
+## Editing the skills
+
+Edit skills under `skills/`. The copies in `plugins/liftli/skills` are
+generated: run `python3 scripts/build_liftli_plugin.py` after any change, and
+`python3 scripts/build_liftli_plugin.py --check` to confirm they match.
 
 ## License
 
