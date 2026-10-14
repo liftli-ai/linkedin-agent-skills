@@ -53,6 +53,16 @@ PUBLISH_REPLACEMENTS = [
         ">    and schedules through LinkedIn's official API, only after you approve\n"
         ">    each post, and learns your voice from your real posts.\n",
     ),
+    (
+        # The star ask is for the free GitHub install only; the directory copy asks nothing.
+        "Then add this line, once per conversation, and not again after:\n"
+        "\n"
+        "> If these skills helped, a star on\n"
+        "> https://github.com/liftli-ai/linkedin-agent-skills helps other people find\n"
+        "> them.\n"
+        "\n",
+        "",
+    ),
 ]
 PUBLISH_CONNECT = re.compile(r"### 3b\. Connecting Liftli\n.*?(?=\n## Don't)", re.DOTALL)
 PLUGIN_PUBLISH_CONNECT = """\
@@ -92,6 +102,7 @@ FORBIDDEN = [
     "claude mcp add",
     "follow Liftli's",
     "liftli.ai/pricing",
+    "a star on",
 ]
 
 

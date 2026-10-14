@@ -1,41 +1,64 @@
-# LinkedIn Agent Skills
+<p align="center">
+  <img src="assets/demo.gif" alt="One command installs the linkedin-hook-generator skill, then the agent turns a draft into 8 LinkedIn hooks labeled by pattern" width="760">
+</p>
 
-31 free skills that turn Claude Code, Codex, Cursor or any skills-compatible
-agent into a LinkedIn content team. They find post ideas in your real work,
-write posts, hooks and comments in your voice, fix your profile, and check
-every draft before it goes out.
+<h1 align="center">LinkedIn Agent Skills</h1>
 
-MIT licensed. No account, no API key, nothing phones home. Made by
+<p align="center">
+  31 free agent skills that turn Claude Code, Codex, Cursor or Gemini CLI into a LinkedIn content team.<br>
+  Posts, hooks and comments in your voice, a profile audit, and a check before every post.<br><br>
+  <a href="https://liftli.ai/skills/">Website</a> ·
+  <a href="#install">Install</a> ·
+  <a href="#the-skills">All 31 skills</a> ·
+  <a href="https://github.com/liftli-ai/linkedin-agent-skills/issues">Issues</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/liftli-ai/linkedin-agent-skills/stargazers"><img src="https://img.shields.io/github/stars/liftli-ai/linkedin-agent-skills?labelColor=black&style=for-the-badge&color=C2410C" alt="GitHub stars"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-C2410C?labelColor=black&style=for-the-badge" alt="MIT license"></a>
+  <a href="https://skills.sh/liftli-ai/linkedin-agent-skills"><img src="https://img.shields.io/badge/skills.sh-listed-C2410C?labelColor=black&style=for-the-badge" alt="Listed on skills.sh"></a>
+</p>
+
+A free, open-source alternative to the AI writers inside paid LinkedIn tools
+like Taplio, Supergrow and AuthoredUp. The skills run on your agent's own
+model: no account, no API key, nothing phones home. Made by
 [Liftli](https://liftli.ai/?utm_source=github&utm_campaign=skills-readme).
-Full directory with a card per skill: [liftli.ai/skills](https://liftli.ai/skills/).
+
+**If a skill saves you time, please star this repository.** Skill directories
+rank packs by stars, so a star is how other people find it.
 
 ## Install
 
-**Claude Code plugin** (all 31 skills):
+In Claude Code, paste this:
+
+```
+Install the skills from https://github.com/liftli-ai/linkedin-agent-skills, then show me what linkedin-agent can do.
+```
+
+Any agent, with the [skills](https://skills.sh) CLI:
+
+```bash
+npx skills add liftli-ai/linkedin-agent-skills
+```
+
+Just one skill:
+
+```bash
+npx skills add liftli-ai/linkedin-agent-skills --skill linkedin-hook-generator
+```
+
+As a Claude Code plugin:
 
 ```
 /plugin marketplace add liftli-ai/linkedin-agent-skills
 /plugin install linkedin-agent-skills@liftli
 ```
 
-**Claude Code plugin with Liftli** (the same 31 skills plus the Liftli
-connector, so your agent can also keep your strategy and publish after you
-approve):
+By hand: copy any folder under `skills/` into `~/.claude/skills/`, or your
+agent's skills folder.
 
-```
-/plugin marketplace add liftli-ai/linkedin-agent-skills
-/plugin install liftli@liftli
-```
-
-To sign in to Liftli once, type `/mcp`, choose **liftli** and pick
-Authenticate, or just ask "help me set up Liftli" (free plan, first 3 posts,
-no card). The plugin connects to `https://mcp.liftli.ai/directory/mcp`, the
-same address as Liftli's listing in Claude's connector directory, so if you
-added Liftli from that directory you get one Liftli, not two. This plugin
-lives in [`plugins/liftli`](plugins/liftli).
-
-**Cursor, Grok and Gemini CLI** (the `liftli` plugin, same skills plus the
-Liftli MCP):
+Cursor, Grok Build and Gemini CLI install the `liftli` plugin, which is the
+same skills plus the Liftli connector:
 
 - Cursor: clone this repository, link it into `~/.cursor/plugins/local/liftli`,
   then reload Cursor.
@@ -43,22 +66,22 @@ Liftli MCP):
   (`.grok-plugin/marketplace.json`).
 - Gemini CLI: `gemini extensions install https://github.com/liftli-ai/linkedin-agent-skills`
 
-Each one asks you to sign in to Liftli the first time a Liftli tool runs.
+## What you get
 
-**Any agent**, with the [skills](https://skills.sh) CLI:
-
-```bash
-npx skills add liftli-ai/linkedin-agent-skills
-```
-
-**One skill:**
-
-```bash
-npx skills add liftli-ai/linkedin-agent-skills --skill linkedin-hook-generator
-```
-
-**By hand:** copy any folder under `skills/` into `~/.claude/skills/`, or
-your agent's skills folder.
+- **Posts in your voice.** `linkedin-voice` builds a voice file from three of
+  your own posts, and every writing skill reads it before it drafts.
+- **Hooks that survive the fold.** Eight opening lines per draft, each labeled
+  by pattern and sized for LinkedIn's "see more" cut.
+- **Comments with substance.** Short replies that add an example, a number or
+  a respectful challenge, instead of "Great post!".
+- **A check before every post.** An AI-tell checker, a fold preview, character
+  limits and a hot-take risk check.
+- **A profile that works.** Headline generator and analyzer, an About section
+  writer and a 25-point profile audit.
+- **Ideas from your real work.** Turn commits, meeting notes and your week into
+  posts worth reading.
+- **Numbers that mean something.** Engagement rate, follower growth, best time
+  to post, and what a ghostwriter would cost.
 
 ## Start here
 
@@ -127,6 +150,29 @@ your agent's skills folder.
 | `linkedin-ghostwriter-cost` | Prices the alternatives: human ghostwriter, DIY hours, software | [tool](https://liftli.ai/tools/ghostwriter-cost-calculator.html) |
 | `linkedin-image-sizes` | Every 2026 dimension + crop rules | [tool](https://liftli.ai/tools/image-sizes.html) |
 
+## What is a LinkedIn agent skill?
+
+A LinkedIn agent skill is a folder with a `SKILL.md` file that teaches an AI
+agent one LinkedIn job, such as writing hooks or auditing a headline. The
+agent reads each skill's short description, loads the full instructions only
+when your request matches, and follows them. Skills are plain Markdown, so you
+can read every line before you install one. Every skill in this pack has its
+own card at [liftli.ai/skills](https://liftli.ai/skills/).
+
+## How this compares to other LinkedIn skill packs
+
+There are several good free LinkedIn skill packs. Pick by what you need:
+
+| Repo | Best for |
+|---|---|
+| [Jakeschincariol/linkedin-agent-skill](https://github.com/Jakeschincariol/linkedin-agent-skill) | Eleven Claude skills, including a humanizer that runs local Python checks on every draft, plus DMs, inbox triage and a weekly plan |
+| [sergebulaev/linkedin-skills](https://github.com/sergebulaev/linkedin-skills) | Eleven Claude Code and Codex skills for posts, comments, feed analysis and a publishing cadence |
+| [charlie947/social-media-skills](https://github.com/charlie947/social-media-skills) | 17 skills across voice, LinkedIn writing, research, analytics and Reel scripts |
+| This repo | 31 small, single-purpose skills you can install one at a time, each with a free browser tool twin, packaged for Claude Code, Codex, Cursor, Gemini CLI and Grok |
+
+Skill counts are from each repo's README in October 2026. They are all MIT
+licensed, so you can mix skills from more than one pack.
+
 ## What these skills don't do
 
 They don't post, and no skill should. Automating the LinkedIn website breaks
@@ -149,6 +195,16 @@ claude mcp login liftli
 ```
 
 Claude app, Codex, Cursor and other clients: [liftli.ai/llms.txt](https://liftli.ai/llms.txt).
+
+## Contributing
+
+New skills and fixes are welcome. Each skill is one folder under `skills/`
+with a `SKILL.md`: a YAML header (`name`, and a `description` that says when
+to use it), then plain instructions. Copy an existing skill as a starting
+point, keep it to one job, and open a pull request with an example input and
+the output you got. Ideas and bugs go in [Issues](https://github.com/liftli-ai/linkedin-agent-skills/issues).
+
+If the pack helped you, a star helps the next person find it.
 
 ## Editing the skills
 
