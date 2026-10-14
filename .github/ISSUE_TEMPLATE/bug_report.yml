@@ -1,0 +1,22 @@
+name: Bug or weak output
+description: A skill gave wrong, weak or broken output, or failed to install.
+labels: ["bug"]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Which skill?
+      placeholder: linkedin-hook-generator
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Which agent and how did you install it?
+      placeholder: "Claude Code, npx skills add"
+  - type: textarea
+    id: what
+    attributes:
+      label: What you gave it, what you got, and what you expected
+    validations:
+      required: true

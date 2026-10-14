@@ -1,0 +1,23 @@
+name: Request a skill
+description: Propose a new LinkedIn skill (or build it yourself).
+title: "Add skill: "
+labels: ["skill request"]
+body:
+  - type: textarea
+    id: job
+    attributes:
+      label: What job should the skill do?
+      description: One job, in one or two sentences. Example, "Turn a podcast transcript into three post ideas."
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example input and the output you would want
+      description: A real example helps more than anything else.
+  - type: checkboxes
+    id: build
+    attributes:
+      label: Do you want to build it?
+      options:
+        - label: I'd like to open a pull request for this skill.

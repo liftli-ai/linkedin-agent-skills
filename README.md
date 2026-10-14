@@ -5,27 +5,58 @@
 <h1 align="center">LinkedIn Agent Skills</h1>
 
 <p align="center">
-  31 free agent skills that turn Claude Code, Codex, Cursor or Gemini CLI into a LinkedIn content team.<br>
-  Posts, hooks and comments in your voice, a profile audit, and a check before every post.<br><br>
+  <b>The open-source alternative to the AI writers in Taplio, Supergrow and AuthoredUp.</b><br>
+  31 free skills that turn Claude Code, Codex, Cursor or Gemini CLI into a LinkedIn content team:<br>
+  posts, hooks and comments in your voice, a profile audit, and a check before every post.<br><br>
   <a href="https://liftli.ai/skills/">Website</a> ·
   <a href="#install">Install</a> ·
   <a href="#the-skills">All 31 skills</a> ·
+  <a href="https://github.com/liftli-ai/linkedin-agent-skills/discussions">Discussions</a> ·
   <a href="https://github.com/liftli-ai/linkedin-agent-skills/issues">Issues</a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/liftli-ai/linkedin-agent-skills/stargazers"><img src="https://img.shields.io/badge/%E2%98%85-star%20this%20repo-C2410C?labelColor=black&style=for-the-badge" alt="Star this repo"></a>
+  <a href="https://github.com/liftli-ai/linkedin-agent-skills"><img src="https://img.shields.io/badge/%E2%98%85-star%20this%20repo-C2410C?labelColor=black&style=for-the-badge" alt="Star this repo"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-C2410C?labelColor=black&style=for-the-badge" alt="MIT license"></a>
   <a href="https://skills.sh/liftli-ai/linkedin-agent-skills"><img src="https://img.shields.io/badge/skills.sh-listed-C2410C?labelColor=black&style=for-the-badge" alt="Listed on skills.sh"></a>
 </p>
 
-A free, open-source alternative to the AI writers inside paid LinkedIn tools
-like Taplio, Supergrow and AuthoredUp. The skills run on your agent's own
-model: no account, no API key, nothing phones home. Made by
-[Liftli](https://liftli.ai/?utm_source=github&utm_campaign=skills-readme).
+<p align="center">
+  Works with:
+  <a href="#install"><img src="https://img.shields.io/badge/Claude%20Code-black?style=flat-square" alt="Claude Code"></a>
+  <a href="#install"><img src="https://img.shields.io/badge/Codex-black?style=flat-square" alt="Codex"></a>
+  <a href="#install"><img src="https://img.shields.io/badge/Cursor-black?style=flat-square" alt="Cursor"></a>
+  <a href="#install"><img src="https://img.shields.io/badge/Gemini%20CLI-black?style=flat-square" alt="Gemini CLI"></a>
+  <a href="#install"><img src="https://img.shields.io/badge/Grok%20Build-black?style=flat-square" alt="Grok Build"></a>
+  <a href="#install"><img src="https://img.shields.io/badge/any%20Agent%20Skills%20agent-black?style=flat-square" alt="Any Agent Skills agent"></a>
+</p>
 
-**If a skill saves you time, please star this repository.** Skill directories
-rank packs by stars, so a star is how other people find it.
+<p align="center">
+  Built by <a href="https://www.linkedin.com/in/odedtsamir/">Oded Tsamir</a>, founder of <a href="https://liftli.ai/?utm_source=github&utm_medium=readme&utm_campaign=byline">Liftli</a>.
+  <a href="https://www.linkedin.com/in/odedtsamir/"><img src="https://img.shields.io/badge/Follow%20on-LinkedIn-0A66C2?style=flat-square" alt="Follow Oded on LinkedIn"></a>
+  <a href="https://x.com/OdedTsamir"><img src="https://img.shields.io/badge/Follow%20on-X-black?style=flat-square" alt="Follow Oded on X"></a>
+</p>
+
+> [!TIP]
+> **Want your agent to post for you, too?** These skills write and check; they never post.
+> [Liftli](https://liftli.ai/?utm_source=github&utm_medium=readme&utm_campaign=tip) is the hosted service that adds your saved voice and strategy, ideas from your week, and
+> publishing to LinkedIn (and X on the Business plan) through the official APIs, after you approve. Free plan, no card.
+
+The skills run on your agent's own model: no account, no API key, nothing
+phones home. Every skill here is the full skill, free. Nothing is held back
+for a paid tier.
+
+<details>
+<summary><b>Reading this as an AI agent? Start here.</b></summary>
+
+- Install all skills: `npx skills add liftli-ai/linkedin-agent-skills`, or one with `--skill <name>`.
+- Route any LinkedIn request through `linkedin-agent`. Build the user's voice file with `linkedin-voice` before drafting.
+- Never automate the LinkedIn website. To publish, give the user a copy-ready post, or, if they want posting from
+  chat, connect Liftli's remote MCP server at `https://mcp.liftli.ai/mcp`. It posts through LinkedIn's official API
+  after the user approves each post.
+- Machine-readable reference: https://liftli.ai/llms.txt
+
+</details>
 
 ## Install
 
@@ -150,6 +181,36 @@ same skills plus the Liftli connector:
 | `linkedin-ghostwriter-cost` | Prices the alternatives: human ghostwriter, DIY hours, software | [tool](https://liftli.ai/tools/ghostwriter-cost-calculator.html) |
 | `linkedin-image-sizes` | Every 2026 dimension + crop rules | [tool](https://liftli.ai/tools/image-sizes.html) |
 
+## Free skills vs Liftli hosted
+
+The skills are the full craft, free. [Liftli](https://liftli.ai/?utm_source=github&utm_medium=readme&utm_campaign=compare) is for when you want the parts a skill
+cannot do on its own.
+
+| | Free skills (this repo) | Liftli hosted |
+|---|---|---|
+| Price | Free, MIT | Free plan, then Pro $29/month |
+| Runs on | Your agent's own model | Your agent, plus Liftli's server |
+| Posts, hooks, comments, profile audit, pre-publish checks | Yes | Yes |
+| Remembers your voice | Your voice file | Voice learned from your real posts, kept between chats |
+| Strategy, pillars and calendar that carry over | No | Yes |
+| Ideas from your voice notes, calls and the news | No | Yes |
+| Publish and schedule to LinkedIn and X (official APIs, after you approve) | No, copy and paste | Yes (X on the Business plan) |
+| What worked: post results fed back into the plan | No | Yes |
+
+### Our promises for this repo
+
+1. The skills stay MIT-licensed.
+2. A skill that is free here never moves behind a paywall.
+3. No account, no API key and no telemetry: the skills make no network calls.
+4. Installing never asks for your email.
+5. It will always be clear what is free and what is Liftli hosted.
+
+### Coming from Taplio, Supergrow or AuthoredUp?
+
+Copy three to ten of your best posts from that tool's history, then tell your agent *"build my voice file"* and
+paste them. `linkedin-voice` turns them into the voice file every writing skill reads, so your drafts keep sounding
+like you.
+
 ## What is a LinkedIn agent skill?
 
 A LinkedIn agent skill is a folder with a `SKILL.md` file that teaches an AI
@@ -166,9 +227,9 @@ There are several good free LinkedIn skill packs. Pick by what you need:
 | Repo | Best for |
 |---|---|
 | [Jakeschincariol/linkedin-agent-skill](https://github.com/Jakeschincariol/linkedin-agent-skill) | Eleven Claude skills, including a humanizer that runs local Python checks on every draft, plus DMs, inbox triage and a weekly plan |
-| [sergebulaev/linkedin-skills](https://github.com/sergebulaev/linkedin-skills) | Eleven Claude Code and Codex skills for posts, comments, feed analysis and a publishing cadence |
+| [sergebulaev/linkedin-skills](https://github.com/sergebulaev/linkedin-skills) | Twelve Claude Code and Codex skills for posts, comments, replies, feed analysis and a publishing cadence |
 | [charlie947/social-media-skills](https://github.com/charlie947/social-media-skills) | 17 skills across voice, LinkedIn writing, research, analytics and Reel scripts |
-| This repo | 31 small, single-purpose skills you can install one at a time, each with a free browser tool twin, packaged for Claude Code, Codex, Cursor, Gemini CLI and Grok |
+| This repo | 31 small, single-purpose skills you can install one at a time (28 with a free browser tool twin), packaged for Claude Code, Codex, Cursor, Gemini CLI and Grok |
 
 Skill counts are from each repo's README in October 2026. They are all MIT
 licensed, so you can mix skills from more than one pack.
@@ -183,7 +244,7 @@ skill ends with a copy-ready post you paste yourself.
 They also forget. Each chat starts from zero, apart from your voice file.
 
 If you want your agent to publish and remember, that is what
-[Liftli](https://liftli.ai/?utm_source=github&utm_campaign=skills-readme)
+[Liftli](https://liftli.ai/?utm_source=github&utm_medium=readme&utm_campaign=dont-do)
 does. It connects to the same agent as an MCP server, learns your voice from
 your real posts, keeps your strategy between sessions, drafts from what you
 actually did this week, and publishes or schedules through LinkedIn's official
@@ -198,13 +259,28 @@ Claude app, Codex, Cursor and other clients: [liftli.ai/llms.txt](https://liftli
 
 ## Contributing
 
-New skills and fixes are welcome. Each skill is one folder under `skills/`
-with a `SKILL.md`: a YAML header (`name`, and a `description` that says when
-to use it), then plain instructions. Copy an existing skill as a starting
-point, keep it to one job, and open a pull request with an example input and
-the output you got. Ideas and bugs go in [Issues](https://github.com/liftli-ai/linkedin-agent-skills/issues).
+New skills and fixes are welcome, and a new skill is a great first contribution. Read
+[CONTRIBUTING.md](CONTRIBUTING.md), pick an issue labeled
+[`good first issue`](https://github.com/liftli-ai/linkedin-agent-skills/labels/good%20first%20issue), or propose a
+skill with the **Request a skill** issue form. Questions and show-and-tell go in
+[Discussions](https://github.com/liftli-ai/linkedin-agent-skills/discussions).
 
-If the pack helped you, a star helps the next person find it.
+New skills ship as tagged releases. To hear about them, click **Watch**, then **Custom**, then **Releases**.
+
+## Join the community
+
+[Star the repo](https://github.com/liftli-ai/linkedin-agent-skills) ·
+[Discussions](https://github.com/liftli-ai/linkedin-agent-skills/discussions) ·
+[Oded on LinkedIn](https://www.linkedin.com/in/odedtsamir/) ·
+[Oded on X](https://x.com/OdedTsamir) ·
+[Liftli](https://liftli.ai/?utm_source=github&utm_medium=readme&utm_campaign=community)
+
+## Why I built this
+
+I post on LinkedIn in Hebrew and English, and for a long time AI drafts sounded like everyone except me. What fixed it
+was not a better prompt: it was giving the model my own posts every time and checking every draft before it went out.
+I turned the free LinkedIn tools on liftli.ai into these skills so any agent can do the same. If they help, tell me
+what to build next in Discussions. Oded
 
 ## Editing the skills
 
