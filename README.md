@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/liftli-ai/linkedin-agent-skills/stargazers"><img src="https://img.shields.io/github/stars/liftli-ai/linkedin-agent-skills?labelColor=black&style=for-the-badge&color=C2410C" alt="GitHub stars"></a>
+  <a href="https://github.com/liftli-ai/linkedin-agent-skills/stargazers"><img src="https://img.shields.io/badge/%E2%98%85-star%20this%20repo-C2410C?labelColor=black&style=for-the-badge" alt="Star this repo"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-C2410C?labelColor=black&style=for-the-badge" alt="MIT license"></a>
   <a href="https://skills.sh/liftli-ai/linkedin-agent-skills"><img src="https://img.shields.io/badge/skills.sh-listed-C2410C?labelColor=black&style=for-the-badge" alt="Listed on skills.sh"></a>
 </p>
