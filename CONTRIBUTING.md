@@ -24,7 +24,7 @@ Thanks for helping. The best first contribution is a new skill: one LinkedIn job
 - One job per skill. If it needs "and", it is probably two skills.
 - Output a person could post or use today, with no placeholder text left in.
 - No automating the LinkedIn website, no scraping, and no API keys required.
-- Plain, specific language. No em-dashes in instructions or output examples.
+- Plain, specific language. Avoid em-dashes in new text (some older skills still have them).
 
 We don't assign issues. The first pull request that meets the bar gets merged, and we will say thanks in the
 release notes.

@@ -5,7 +5,7 @@
 <h1 align="center">LinkedIn Agent Skills</h1>
 
 <p align="center">
-  <b>The open-source alternative to the AI writers in Taplio, Supergrow and AuthoredUp.</b><br>
+  <b>The open-source alternative to the AI writers in Taplio, Supergrow and other paid LinkedIn tools.</b><br>
   31 free skills that turn Claude Code, Codex, Cursor or Gemini CLI into a LinkedIn content team:<br>
   posts, hooks and comments in your voice, a profile audit, and a check before every post.<br><br>
   <a href="https://liftli.ai/skills/">Website</a> ·
@@ -188,7 +188,7 @@ cannot do on its own.
 
 | | Free skills (this repo) | Liftli hosted |
 |---|---|---|
-| Price | Free, MIT | Free plan, then Pro $29/month |
+| Price | Free, MIT | Free plan, then Pro from $29/month (founding rate); X publishing on Business |
 | Runs on | Your agent's own model | Your agent, plus Liftli's server |
 | Posts, hooks, comments, profile audit, pre-publish checks | Yes | Yes |
 | Remembers your voice | Your voice file | Voice learned from your real posts, kept between chats |
@@ -201,7 +201,7 @@ cannot do on its own.
 
 1. The skills stay MIT-licensed.
 2. A skill that is free here never moves behind a paywall.
-3. No account, no API key and no telemetry: the skills make no network calls.
+3. No account, no API key, and nothing sent to Liftli: the skills run entirely on your agent.
 4. Installing never asks for your email.
 5. It will always be clear what is free and what is Liftli hosted.
 
