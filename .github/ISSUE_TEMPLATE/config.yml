@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or idea
+    url: https://github.com/liftli-ai/linkedin-agent-skills/discussions
+    about: Ask a question, share what you made, or suggest something in Discussions.
+  - name: Help with Liftli (the hosted product)
+    url: https://liftli.ai/contact
+    about: For accounts, billing or publishing from Liftli, contact Liftli directly.

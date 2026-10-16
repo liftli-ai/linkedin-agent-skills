@@ -1,0 +1,10 @@
+changelog:
+  categories:
+    - title: New skills
+      labels: ["new skill"]
+    - title: Better output
+      labels: ["improvement", "bug"]
+    - title: Install and packaging
+      labels: ["packaging"]
+    - title: Other changes
+      labels: ["*"]
